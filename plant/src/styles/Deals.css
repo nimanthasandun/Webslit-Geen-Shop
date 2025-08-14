@@ -1,0 +1,40 @@
+.products-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .product-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    text-align: center;
+  }
+  
+  .old-price {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .new-price {
+    color: green;
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .discount {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .validity {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .normal-price {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  

@@ -1,0 +1,89 @@
+/* General admin page tweaks */
+.settings-page {
+  margin-left: 240px;
+  padding: 30px 25px;
+  background-color: #f9faf9; /* very light green/grayish */
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #34495e;
+}
+
+.settings-page h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 25px;
+  color: #2a5934;
+  letter-spacing: 0.6px;
+}
+
+/* Form styling */
+.settings-form {
+  max-width: 420px;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+  font-size: 13px;
+  color: #2c3e50;
+  letter-spacing: 0.4px;
+}
+
+.settings-input {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 13px;
+  border: 1.8px solid #a9b7b7;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  color: #2c3e50;
+}
+
+.settings-input:focus {
+  border-color: #27ae60;
+  box-shadow: 0 0 5px #27ae60a0;
+}
+
+/* Button */
+.btn.update-btn {
+  background-color: #2ecc71;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 10px rgba(46, 204, 113, 0.4);
+}
+
+.btn.update-btn:hover {
+  background-color: #27ae60;
+  box-shadow: 0 7px 16px rgba(39, 174, 96, 0.6);
+}
+
+/* Message */
+.settings-message {
+  margin-top: 18px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #27ae60; /* success green */
+  letter-spacing: 0.3px;
+}
+
+/* Error message styling */
+.settings-message:empty {
+  display: none;
+}

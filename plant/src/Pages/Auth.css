@@ -1,0 +1,106 @@
+/* Auth.css - Beautiful styling for Login and Register (Green Shop) */
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #e8f5e9, #f1f8e9);
+  margin: 0;
+  padding: 0;
+}
+
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-box {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 128, 0, 0.15);
+  width: 100%;
+  max-width: 420px;
+  position: relative;
+}
+
+.auth-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2e7d32;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 24px;
+  color: #aaa;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.close-button:hover {
+  color: #333;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.auth-form input {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  transition: border 0.3s ease;
+}
+
+.auth-form input:focus {
+  border-color: #66bb6a;
+}
+
+.auth-form button {
+  background-color: #43a047;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #2e7d32;
+}
+
+.auth-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.auth-link a {
+  color: #388e3c;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.auth-link a:hover {
+  color: #1b5e20;
+}
+
+p {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

@@ -1,0 +1,286 @@
+/* Cart.css */
+
+.cart-wrapper {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.3px;
+  color: #333;
+  background: #fdfdfd;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  -webkit-font-smoothing: antialiased;
+}
+
+h3, h4 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #2f4f4f;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e8f5e9;
+  padding: 10px 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.icon {
+  color: #4caf50;
+  margin-right: 6px;
+}
+
+.orders-btn {
+  background: #388e3c;
+  color: #fff;
+  font-size: 12px;
+  padding: 5px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.orders-btn:hover {
+  background: #2e7d32;
+}
+
+.cart-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.cart-section ol {
+  list-style-type: decimal;
+  padding-left: 20px;
+}
+
+.cart-section li {
+  padding: 5px 0;
+  font-size: 13px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.cart-section li:hover {
+  background: #f1f1f1;
+}
+
+.form-section {
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 13px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 4px;
+  font-size: 12.5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+.update-btn {
+  background: #0288d1;
+  color: #fff;
+}
+
+.update-btn:hover {
+  background: #0277bd;
+}
+
+.remove-btn {
+  background: #e53935;
+  color: #fff;
+}
+
+.remove-btn:hover {
+  background: #c62828;
+}
+
+.primary-btn {
+  background: #43a047;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background: #388e3c;
+}
+
+.success-btn {
+  background: #009688;
+  color: #fff;
+}
+
+.success-btn:hover {
+  background: #00796b;
+}
+
+.info-btn {
+  background: #3949ab;
+  color: #fff;
+}
+
+.info-btn:hover {
+  background: #303f9f;
+}
+
+.login-btn {
+  background: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background: #43a047;
+}
+
+.message {
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.message.success {
+  background: #d0f0c0;
+  color: #2e7d32;
+}
+
+.message.warning {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.message.info {
+  background: #cce5ff;
+  color: #004085;
+}
+
+.product-link {
+  color: #2e7d32;
+  text-decoration: underline;
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+.total-section {
+  background: #f1f8e9;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #c5e1a5;
+  font-size: 13px;
+}
+
+.total-section p {
+  margin: 6px 0;
+  font-size: 13px;
+}
+
+.cart-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.success-msg {
+  color: #2e7d32;
+  font-size: 13px;
+  margin: 8px 0;
+}
+
+.error-msg {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-top: 10px;
+}
+
+.payment-success {
+  background: #e0f2f1;
+  padding: 10px;
+  margin-top: 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #00796b;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.login-prompt {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.login-prompt h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.login-prompt p {
+  font-size: 13.5px;
+  color: #666;
+}
+
+.buy-now-footer {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.buy-now-btn {
+  padding: 10px 20px;
+  font-size: 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.buy-now-btn:hover {
+  background-color: #218838;
+}

@@ -1,0 +1,117 @@
+.payment-wrapper {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  font-family: 'Segoe UI', sans-serif;
+  position: relative;
+}
+
+.close-icon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+  font-size: 20px;
+  color: #777;
+  transition: color 0.2s;
+}
+
+.close-icon:hover {
+  color: #e53935;
+}
+
+.payment-title {
+  text-align: center;
+  font-size: 22px;
+  color: #2e7d32;
+  margin-bottom: 20px;
+}
+
+.payment-total {
+  text-align: center;
+  background: #f1f8e9;
+  padding: 12px 0;
+  border-radius: 8px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  border: 1px solid #c5e1a5;
+}
+
+.payment-total p {
+  margin: 0;
+  color: #555;
+}
+
+.payment-total strong {
+  display: block;
+  margin-top: 6px;
+  font-size: 18px;
+  color: #2e7d32;
+}
+
+.payment-methods {
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #444;
+}
+
+.method-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.payment-methods label {
+  display: block;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border-color 0.2s;
+}
+
+.payment-methods input[type="radio"] {
+  margin-right: 10px;
+}
+
+.payment-methods label:hover {
+  background: #f9f9f9;
+  border-color: #a5d6a7;
+}
+
+.payment-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  background-color: #43a047;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.payment-button:hover {
+  background-color: #388e3c;
+}
+
+.payment-error {
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.payment-error h2 {
+  color: #d32f2f;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.payment-error p {
+  color: #555;
+  font-size: 14px;
+}

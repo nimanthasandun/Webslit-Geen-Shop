@@ -1,0 +1,49 @@
+.custom-order-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  gap: 30px;
+  background-color: #f4fdf6;
+}
+
+.custom-order-left, .custom-order-right {
+  flex: 1 1 45%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-order-form input,
+.custom-order-form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.custom-order-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2d6a4f;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.order-card {
+  border: 1px solid #d2e3dc;
+  padding: 15px;
+  border-radius: 8px;
+  background: #f8fff9;
+}

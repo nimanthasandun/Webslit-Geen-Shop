@@ -1,0 +1,89 @@
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 10%;
+  background-color: #fff;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1;
+  max-width: 50%;
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.highlight-green {
+  color: #8BC34A;
+}
+
+.hero-left p {
+  margin: 20px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.hero-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #333;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 50%;
+}
+
+.hero-right img {
+  width: 80%;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Animations */
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-left {
+  animation: slideLeft 1s ease forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 1s ease forwards;
+}

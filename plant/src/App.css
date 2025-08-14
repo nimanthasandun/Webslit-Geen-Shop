@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;600;700&family=Playfair+Display:wght@500&display=swap');
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background-color: #f9fafb;
+  color: #2c3e50;
+}
+
+.top-strip {
+  padding: 6px 0;
+  font-size: 14px;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.5px;
+  color: #fefefe;
+  animation: fadeSlideDown 0.6s ease-in-out;
+}
+
+.headerWrapper .header {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 10px 0;
+  animation: fadeSlideUp 0.6s ease-in-out;
+}
+
+@keyframes fadeSlideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logoWrapper img {
+  width: 100px;
+  transition: transform 0.3s ease;
+}
+
+.logoWrapper img:hover {
+  transform: scale(1.05);
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.headerSearch {
+  position: relative;
+  flex: 2;
+  display: flex;
+  align-items: center;
+  background: #eef2f3;
+  border-radius: 12px;
+  border: 1px solid #d6d6d6;
+  height: 42px;
+  margin: 0 20px;
+  transition: box-shadow 0.3s;
+}
+
+.headerSearch:focus-within {
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2);
+}
+
+.headerSearch input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 0 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.headerSearch button {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  padding: 4px 10px;
+  cursor: pointer;
+  color: #4CAF50;
+  transition: transform 0.2s ease;
+}
+
+.headerSearch button:hover {
+  transform: scale(1.1);
+}
+
+.search-suggestions {
+  position: absolute;
+  top: 105%;
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow-y: auto;
+  max-height: 180px;
+  z-index: 10;
+}
+
+.search-suggestions li {
+  padding: 10px 14px;
+  font-size: 14px;
+  transition: background 0.2s;
+}
+
+.search-suggestions li:hover {
+  background: #f0f0f0;
+}
+
+.navBar {
+  display: flex;
+  gap: 25px;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  font-size: 15px;
+  text-decoration: none;
+  color: #04511f;
+  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 0.4px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #4CAF50;
+  transition: width 0.3s ease;
+  margin-top: 3px;
+}
+
+.navLink:hover::after {
+  width: 80%;
+}
+
+.navLink:hover {
+  color: #0b3f1b;
+}
+
+.headerButtons {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.headerButtons span {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  font-family: 'Lato', sans-serif;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e8f5e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2c3e50;
+  border: 1px solid #dcdcdc;
+  transition: background 0.2s;
+}
+
+.circle:hover {
+  background: #c8e6c9;
+}
+
+.cartButton {
+  background: #fff3e0;
+}
+
+.cartButton:hover {
+  background: #ffe0b2;
+}
+
+.cartButton svg {
+  color: #e65100;
+}
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap');
+
+/* Top welcome strip */
+.top-strip {
+  background-color: #568b6b;
+  padding: 15px 0;
+  text-align: center;
+  animation: slideDownFade 0.6s ease-in-out;
+  border-bottom: 1px solid #4e8e68;
+}
+
+.top-strip p {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+/* Optional bold text style if not inline */
+.top-strip b {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Entrance animation */
+@keyframes slideDownFade {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

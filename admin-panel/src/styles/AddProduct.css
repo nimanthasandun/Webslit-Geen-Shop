@@ -1,0 +1,114 @@
+/* AddProduct.css */
+
+.admin-page {
+  margin-left: 240px; /* Space for sidebar */
+  padding: 40px;
+  background-color: #f8fafc;
+  min-height: 100vh;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+.admin-page h1 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #065b26;
+  letter-spacing: 1px;
+  animation: fadeInDown 0.6s ease-in-out;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  animation: fadeIn 0.8s ease-in;
+}
+
+form label {
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="number"],
+form input[type="file"],
+form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #4caf50;
+  outline: none;
+  box-shadow: 0 0 4px #4caf5044;
+}
+
+form button {
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #3e9142;
+}
+
+form img {
+  display: block;
+  margin-top: 10px;
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form p {
+  margin-top: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease;
+}
+
+form p::before {
+  content: "ℹ️ ";
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
